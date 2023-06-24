@@ -16,6 +16,8 @@ routes.get("/", (req, res) => {
   res.send("welocme to task manager");
   console.log("from home page");
 });
+
+//routes.get('/tasks')
 routes.use("/tasks", tasksInfo);
 app.listen(PORT, (err) => {
   if (!err) console.log("app listening on port " + PORT);
